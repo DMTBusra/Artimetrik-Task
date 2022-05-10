@@ -29,7 +29,7 @@ const Detail = () => {
   return (
     <div className="container_detail">
       {currentUser ? (
-        <div className="profile" key={currentUser.user_id}>
+        <div className="profile">
           <br />
           <p className="title_detail">Profile</p>
 

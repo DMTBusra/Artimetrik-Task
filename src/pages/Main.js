@@ -18,8 +18,15 @@ const Main = () => {
   const [statuslist, setStatuslist] = useState([]);
   const navigate = useNavigate();
  useEffect(() => {
+    search
+            ? setTotalPages(Math.ceil(users.filter((val) =>
+                val.name.toLowerCase().includes(search.toLowerCase())
+              ).length / perpage)) :
+    status
+            ? setTotalPages(Math.ceil(statuslist.length/ perpage)) :
+
     setTotalPages(Math.floor(users.length / perpage));
- }, [users])
+ }, [users,search,status])
  
   const handleClick = (num) => {
     setPage(num);
