@@ -3,9 +3,9 @@ import React from 'react'
 const Converter = ({mili}) => {
         
        
-    var hours = Math.floor((mili / 60) / 60);
-    var minutes = (Math.floor(mili / 60)) % 60; 
-    var seconds = mili % 60; 
+    var hours = Math.floor((mili/1000 / 60) / 60);
+    var minutes = (Math.floor(mili/1000/ 60)) % 60; 
+    var seconds = (mili/1000) % 60; 
        
     
  

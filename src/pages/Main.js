@@ -130,11 +130,7 @@ const Main = () => {
         <button className="btn_download" onClick={fonk}>
           Download
         </button>
-        {console.log(
-          users.filter((val) =>
-            val.name.toLowerCase().includes(search.toLowerCase())
-          ).length
-        )}
+        
       </div>
     </div>
   );
